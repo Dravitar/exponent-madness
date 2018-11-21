@@ -27,7 +27,7 @@ function updateCountdown() { // updates the cooldown timer
 function shorten(number) {
     	number = Math.log10(number);
     	var abbv = notationList1[Math.floor(number/3)];
-    	var numberPiece = Math.pow(10,number%3);
+    	var numberPiece = Math.round(Math.pow(10,number%3)*100)/100;
     	return numberPiece+" "+abbv;
 }
 
