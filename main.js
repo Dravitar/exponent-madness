@@ -1,5 +1,5 @@
 var num = 1; // number that we are increasing
-var abbv = " "; // abbreviation according to AAS
+//var abbv = " "; // abbreviation according to AAS
 var countdown = 0; // counter for the button cooldown
 //var notationList1 = [" ", "U", "D", "T", "Qa", "Qi", "Sx", "Sp", "Oc", "N"];
 //var notationList2 = ["D", "Vg", "Tg", "Qg", "Qq", "Sg", "Su", "Og", "Ng"];
