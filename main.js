@@ -10,7 +10,7 @@ function step() { // clicks button
 	if(countdown==0) {
 		num = Math.round(num*1.5*100)/100; // updates number
 		//num = num*1.5;
-		if(number>1000) shorten(num, abbv);/////////THIS ONE/////////
+		if(num>1000) shorten(num, abbv);/////////THIS ONE/////////
 		//update("numDisplay",num);
 		update("numDisplay",""+num+" "+abbv); // update number on the page
 		countdown = 3000; // reset cooldown timer
@@ -25,10 +25,12 @@ function updateCountdown() { // updates the cooldown timer
 }
 	
 function shorten(number, abbv) {
-	number = Math.log10(number);
-	abbv = notationList1[Math.floor(number/3)];
-	var numberPiece = Math.pow(10, number%1);
-	return numberPiece+abbv;
+	number = number/1000;
+	abbv = notationList1[notationList1.indexOf(abbv)+1];
+	//number = Math.log10(number);
+	//abbv = notationList1[Math.floor(number/3)];
+	//var numberPiece = Math.pow(10, number%1);
+	//return numberPiece+abbv;
 }
 
 setInterval(updateCountdown,50);
