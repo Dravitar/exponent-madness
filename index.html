@@ -18,7 +18,7 @@ function step() { // clicks button
 function updateCountdown() { // updates the cooldown timer
 	if(countdown>50) countdown = countdown-50;
 	if(countdown<=50&&countdown>=0) countdown = 0;
-	update("mainButton", countdown);
+	update("mainButton", "Milliseconds remaining:" + countdown);
 }
 setInterval(updateCountdown,50);
 </script>
