@@ -28,3 +28,6 @@ function shorten(number, abbv) {
 	number/=1000;
 	abbv = notationList1[notationList1.indexOf(abbv)+1];
 }
+function simple() {
+	alert("HI");
+}
