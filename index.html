@@ -17,14 +17,15 @@ function step() { // clicks button
 }
 function updateCountdown() { // updates the cooldown timer
 	if(countdown>50) countdown = countdown-50;
-if(countdown<=50&&countdown>=0) countdown = 0;
+	if(countdown<=50&&countdown>=0) countdown = 0;
+	update(mainButton, countdown);
 }
 setInterval(updateCountdown,50);
 </script>
 </head>
 <body>
 Number: <div id="numDisplay">1</div>
-<button onclick="step()">Multiply the number by 1.5</button>
+<button id="mainButton" onclick="step()">o</button>
+	<div id="info">Multiply the number by 1.5</div>
 </body>
 </html>
-
