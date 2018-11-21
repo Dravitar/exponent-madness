@@ -13,7 +13,7 @@ function step() { // clicks button
 		if(num>1000) shorten(num, abbv);/////////THIS ONE/////////
 		//update("numDisplay",num);
 		update("numDisplay",shorten(num)); // update number on the page
-		countdown = 3000; // reset cooldown timer
+		countdown = 300; // reset cooldown timer
 	}
 	else return 0;
 }
