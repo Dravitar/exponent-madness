@@ -25,8 +25,10 @@ function updateCountdown() { // updates the cooldown timer
 }
 	
 function shorten(number, abbv) {
-	number=number/1000;
-	abbv = notationList1[notationList1.indexOf(abbv)+1];
+	number = Math.log10(number);
+	abbv = notationList1[Math.floor(number/3)];
+	var numberPiece = Math.pow(10, number%1);
+	return numberPiece+abbv;
 }
 
 setInterval(updateCountdown,50);
