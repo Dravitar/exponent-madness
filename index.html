@@ -16,7 +16,7 @@ function step() { // clicks button
 		//num = num*1.5;
 		if(number>1000) shorten(num, abbv);
 		//update("numDisplay",num);
-		update("numDisplay",num+" "+abbv); // update number on the page
+		update("numDisplay",""+num+" "+abbv); // update number on the page
 		countdown = 3000; // reset cooldown timer
 	}
 	else return 0;
@@ -37,7 +37,7 @@ setInterval(updateCountdown,50);
 </head>
 <body>
 Number: <div id="numDisplay">1</div>
-<button id="mainButton" onclick="step()">o</button>
+<button id="mainButton" onclick="step()">n</button>
 	<div id="info">Multiply the number by 1.5</div>
 </body>
 </html>
