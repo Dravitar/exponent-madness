@@ -11,8 +11,8 @@ function step() { // clicks button
 		num = Math.round(num*1.5*100)/100; // updates number
 		//num = num*1.5;
 		//if(number>1000) shorten(num, abbv);
-		//update("numDisplay",num);
-		update("numDisplay",""+num+" "+abbv); // update number on the page
+		update("numDisplay",num);
+		//update("numDisplay",""+num+" "+abbv); // update number on the page
 		countdown = 3000; // reset cooldown timer
 	}
 	else return 0;
